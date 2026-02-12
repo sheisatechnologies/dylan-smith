@@ -1,0 +1,600 @@
+/* BRETTENHAM HOUSE
+/* OTHER ALIAS LTD
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* VARIABLES
+/* ---------------------------------------------- */
+:root {
+    --blue: #07306D;
+    --yellow: #E2BC2C;
+
+    --green: #168771;
+    --orange: #FF4602;
+    --mustard: #FF9222;
+    --black: #000000;
+    --white: #FFFFFF;
+    --off-black: #333333;
+    --grey: #B6B6B6FF;
+    --light-grey: #ECF5F5;
+    --ziggurat: #BDE2DF;
+    --breaker-bay: #6CA6A2;
+    --edgewater: #CAE2E0;
+}
+
+/* ---------------------------------------------- */
+/* @FONT-FACE
+/* ---------------------------------------------- */
+
+@font-face {
+    font-family: 'Altform-Regular';
+    src: url('../fonts/Altform-Regular.woff2') format('woff2'),
+    url('../fonts/Altform-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altform-Bold';
+    src: url('../fonts/Altform-Bold.woff2') format('woff2'),
+    url('../fonts/Altform-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------------------------------------------- */
+/* GENERAL
+/* ---------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------- */
+/* TEXT COLOURS
+/* ---------------------------------------------- */
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-mustard {
+    color: var(--mustard);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-breaker-bay {
+    color: var(--breaker-bay);
+}
+
+.text-edgewater {
+    color: var(--edgewater);
+}
+
+/* ---------------------------------------------- */
+/* DESKTOP LAYOUT
+/* ---------------------------------------------- */
+
+@media (min-width: 992px){
+
+    .ptd6 {
+        padding-top: 120px;
+    }
+    .ptd5 {
+        padding-top: 100px;
+    }
+    .ptd4 {
+        padding-top: 80px;
+    }
+    .ptd3 {
+        padding-top: 60px;
+    }
+    .ptd2 {
+        padding-top: 40px;
+    }
+    .ptd1 {
+        padding-top: 20px;
+    }
+    .pbd6 {
+        padding-bottom: 120px;
+    }
+    .pbd5 {
+        padding-bottom: 100px;
+    }
+    .pbd4 {
+        padding-bottom: 80px;
+    }
+    .pbd3 {
+        padding-bottom: 60px;
+    }
+    .pbd2 {
+        padding-bottom: 40px;
+    }
+    .pbd1 {
+        padding-bottom: 20px;
+    }
+    .psdn {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .psd1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .psd2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .psd3 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .tcd {
+        text-align: center;
+    }
+    .tld {
+        text-align: left;
+    }
+    .trd {
+        text-align: right;
+    }
+
+}
+
+/* ---------------------------------------------- */
+/* MOBILE LAYOUT
+/* ---------------------------------------------- */
+
+@media (max-width: 991px){
+
+    .ptm6 {
+        padding-top: 60px;
+    }
+    .ptm5 {
+        padding-top: 50px;
+    }
+    .ptm4 {
+        padding-top: 40px;
+    }
+    .ptm3 {
+        padding-top: 30px;
+    }
+    .ptm2 {
+        padding-top: 20px;
+    }
+    .ptm1 {
+        padding-top: 10px;
+    }
+    .pbm6 {
+        padding-bottom: 60px;
+    }
+    .pbm5 {
+        padding-bottom: 50px;
+    }
+    .pbm4 {
+        padding-bottom: 40px;
+    }
+    .pbm3 {
+        padding-bottom: 30px;
+    }
+    .pbm2 {
+        padding-bottom: 20px;
+    }
+    .pbm1 {
+        padding-bottom: 10px;
+    }
+    .psmn {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .psm1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .psm2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .psm3 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .tcm {
+        text-align: center;
+    }
+    .tlm {
+        text-align: left;
+    }
+    .trm {
+        text-align: right;
+    }
+    .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+}
+
+/* ---------------------------------------------- /*
+ * LARGE BREAK POINT
+/* ---------------------------------------------- */
+
+/* @media only screen and (min-width : 1500px) {
+    .container {
+        max-width: 1440px;
+    }
+} */
+
+
+/* ================= GLOBAL ================= */
+
+body{
+     font-family: 'Montserrat', sans-serif;
+}
+
+.section-padding{
+    padding: 8vh 0;
+}
+
+.btn-custom {
+    width: 11.5vw;
+    height: 3.7vw;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+     /* চাইলে adjust করতে পারেন */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;  /* padding remove কারণ fixed height দিচ্ছি */
+
+  
+    
+    line-height: 0.83vw;
+    letter-spacing: 0.12vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    background:#f8f9fa;
+    text-align:center;
+    padding:12vh 5vw;
+   
+}
+
+.text-blue{
+     color: #07306D;
+}
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 7.3vw;
+    line-height: 6.6vw;
+    letter-spacing: -0.21vw;
+    text-align: center;
+}
+
+
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;   /* Regular */
+    font-size: 2.85vw;
+    line-height: 3.5vw;
+    letter-spacing: -0.07vw;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+
+/* .hero .btn{
+   
+   
+    font-size: 0.9vw;
+   
+
+
+} */
+
+.contact-info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;     /* SemiBold */
+    font-size: 1.38vw;
+    line-height: 1.94vw;
+    letter-spacing: 0;
+}
+
+/* ================= SERVICES ================= */
+
+.service-left{
+    background:#0d2c5a;
+    color:#fff;
+    padding:10vh 5vw;
+}
+
+.service-right{
+    background:#d4af37;
+    color:#000;
+    padding:10vh 5vw;
+}
+
+.service-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    letter-spacing: -0.14vw; /* -2px convert করলে */
+}
+
+
+.service-sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.38vw;
+    line-height: 1.94vw;
+    letter-spacing: 0;
+    max-width: 25vw;   /* 👈 text width control */
+}
+
+
+
+.service-text{
+    font-size:1.1vw;
+    margin:3vh 0;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#f8f9fa;
+    padding:8vh 5vw;
+}
+
+.contact h2{
+    font-size:2.5vw;
+}
+
+.contact p{
+    font-size:1.1vw;
+}
+
+/* ================= RESPONSIVE FIX ================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:8vw;
+    }
+
+    .hero p{
+        font-size:4vw;
+    }
+
+    
+
+    .service-text{
+        font-size:3.8vw;
+    }
+
+    .btn-custom{
+        font-size:4vw;
+    }
+
+    .contact h2{
+        font-size:6vw;
+    }
+
+    .contact p{
+        font-size:4vw;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .contact-info div{
+        font-size:3.5vw !important;
+    }
+
+    .hero h1{
+        font-size:10vw !important;
+        line-height: 9.6vw;
+    }
+
+    .hero p{
+        font-size:5vw !important;
+        line-height: 6.5vw;
+    }
+
+    /* .hero .btn {
+    font-size: 4vw;
+} */
+
+.contact-icon {
+    width: 6.2vw !important;
+    height: 3.2vw !important;
+    object-fit: contain;
+    display: block;
+}
+
+}
+
+
+
+
+.footer-left {
+    background: #f8f9fa;
+     padding:10vh 5vw;
+}
+
+.footer-right {
+    background: #f8f9fa;
+     padding:10vh 5vw;
+     line-height: 1vw;
+}
+
+.footer-title {
+    font-size: clamp(26px, 3.5vw, 60px);
+    font-weight: 700;
+    margin-bottom: 1.5vw;
+}
+
+
+
+
+
+.footer-contact {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;     /* SemiBold */
+    font-size: 1.38vw;
+    line-height: 1.94vw;
+    letter-spacing: 0;
+     margin-bottom: 1.2vw;
+}
+
+
+/* Copyright */
+.copyright-section {
+    background: #e9ecef;
+}
+
+.copyright-text {
+    padding: 2vw 8vw;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+
+    font-size: 1.1vw;
+   
+}
+
+
+
+.contact-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.38vw;
+    line-height: 1.94vw;
+    letter-spacing: 0;
+    margin-bottom: 1.2vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   /* vertical center */
+    gap: 0.6vw;
+}
+
+.contact-icon {
+    width: 1.2vw;
+    height: 1.2vw;          /* equal height দিলে perfect align হয় */
+    object-fit: contain;
+    display: block;         /* inline gap remove করে */
+}
+
+.service-icon-img {
+    height: 4vw;      /* screen width অনুযায়ী বড়–ছোট হবে */
+    width: auto;
+}
+
+
+
+
+@media(max-width:768px){
+
+    .service-sub-title {
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4.38vw;
+    line-height: 5.94vw;
+    letter-spacing: 0;
+    max-width: none;
+}
+
+
+.service-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4.2vw;
+    line-height: 10.2vw;
+    letter-spacing: -0.14vw;
+    font-size: 10vw;
+}
+
+.service-icon-img {
+    height: 20vw;
+    width: auto;
+}
+
+.btn-custom {
+    width: 39.5vw;
+    height: 11.7vw;
+}
+
+.footer-contact {
+   
+    font-size: 4.38vw;
+    line-height: 6.94vw;
+   
+}
+
+.copyright-text {
+   
+    font-size: 2.1vw;
+    line-height: 2vw;
+}
+
+.footer-left {
+    background: #f8f9fa;
+    padding: 5vh 5vw;
+}
+
+.footer-right {
+    background: #f8f9fa;
+    padding: 5vh 5vw;
+   
+}
+
+}
+
+/* Hover effect */
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 #07306D;
+}
+
+/* Click (Active) 3D Press */
+.btn-custom:active {
+    background-color: #07306D;
+    color: #fff;
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #041f45;
+}
