@@ -239,11 +239,11 @@
  * LARGE BREAK POINT
 /* ---------------------------------------------- */
 
-/* @media only screen and (min-width : 1500px) {
-    .container {
-        max-width: 1440px;
+@media only screen and (min-width : 1500px) {
+    .container-fluid {
+        max-width: 3000px;
     }
-} */
+}
 
 
 /* ================= GLOBAL ================= */
@@ -286,7 +286,7 @@ body{
 .hero{
     background:#f8f9fa;
     text-align:center;
-    padding:12vh 5vw;
+    padding:5vh 5vw;
    
 }
 
@@ -348,7 +348,9 @@ body{
 .service-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 4.2vw;
+    /* font-size: 4.2vw; */
+    font-size: clamp(24px, 4.2vw, 3.2vw);
+
     line-height: 4.2vw;
     letter-spacing: -0.14vw; /* -2px convert করলে */
 }
@@ -387,7 +389,7 @@ body{
 
 /* ================= RESPONSIVE FIX ================= */
 
-@media(max-width:768px){
+@media(max-width:991px){
 
     .hero h1{
         font-size:8vw;
@@ -418,7 +420,7 @@ body{
 }
 
 
-@media(max-width:768px){
+@media(max-width:991px){
 
     .contact-info div{
         font-size:3.5vw !important;
@@ -528,7 +530,7 @@ body{
 
 
 
-@media(max-width:768px){
+@media(max-width:991px){
 
     .service-sub-title {
    font-family: 'Montserrat', sans-serif;
@@ -597,4 +599,11 @@ body{
     color: #fff;
     transform: translateY(4px);
     box-shadow: 0 2px 0 #041f45;
+}
+
+
+
+.service-section {
+    width: 100%;
+    background: linear-gradient(to left, #d4af37 50%, #0d2c5a 50%);
 }
