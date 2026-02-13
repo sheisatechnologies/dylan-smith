@@ -607,3 +607,14 @@ body{
     width: 100%;
     background: linear-gradient(to left, #d4af37 50%, #0d2c5a 50%);
 }
+.logo-img {
+    height: 8vw;
+    width: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 12vw; /* mobile e fixed clean size */
+    }
+}
