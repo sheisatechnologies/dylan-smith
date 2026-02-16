@@ -192,6 +192,7 @@
         background-color: var(--blue);
         padding-left: 35px;
         padding-right: 35px;
+        padding-left: 0;
 }
 
  }
