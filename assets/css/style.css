@@ -188,8 +188,10 @@
 
     .service-blue {
   
-  color: #fff;
-    background-color: var(--blue);
+        color: #fff;
+        background-color: var(--blue);
+        padding-left: 35px;
+        padding-right: 35px;
 }
 
  }
@@ -650,6 +652,8 @@ color:#0b2c5f;
             color: var(--blue);
        
         position: relative;
+                padding-left: 35px;
+        padding-right: 35px;
               
 }
 
@@ -658,6 +662,8 @@ color:#0b2c5f;
     /* padding-left: 0;
     padding-left: 12px; */
     background-color: var(--blue);
+     padding-left: 35px;
+        padding-right: 35px;
 }
 
 .service-icon-yellow {
@@ -676,8 +682,8 @@ color:#0b2c5f;
  background: none;
 }
 .py-5 {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
 }
 }
 
