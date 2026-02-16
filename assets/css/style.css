@@ -326,9 +326,7 @@ text-align:center;
   width: 100%;
 }
 
-.service-box {
-  padding: 80px 40px;
-}
+
 
 /* Background full width effect */
 .service-blue {
@@ -516,7 +514,7 @@ color:#0b2c5f;
 .footer-text {
     
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
    
 }
 }
@@ -649,15 +647,15 @@ color:#0b2c5f;
 
 .service-yellow {
             color: var(--blue);
-        padding: 0px 0px;
+       
         position: relative;
                padding-top: 104px;
 }
 
 .service-blue {
     color: #fff;
-    padding-left: 0;
-    padding: 0px 0px;
+    /* padding-left: 0;
+    padding-left: 12px; */
 }
 
 .service-icon-yellow {
