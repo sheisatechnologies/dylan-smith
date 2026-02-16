@@ -1,4 +1,4 @@
-/* BRETTENHAM HOUSE
+/* DYLEN
 /* OTHER ALIAS LTD
 /* ---------------------------------------------- */
 
@@ -8,45 +8,10 @@
 :root {
     --blue: #07306D;
     --yellow: #E2BC2C;
+     --font-primary: 'Montserrat', Helvetica, Arial, sans-serif;
 
-    --green: #168771;
-    --orange: #FF4602;
-    --mustard: #FF9222;
-    --black: #000000;
-    --white: #FFFFFF;
-    --off-black: #333333;
-    --grey: #B6B6B6FF;
-    --light-grey: #ECF5F5;
-    --ziggurat: #BDE2DF;
-    --breaker-bay: #6CA6A2;
-    --edgewater: #CAE2E0;
+   
 }
-
-/* ---------------------------------------------- */
-/* @FONT-FACE
-/* ---------------------------------------------- */
-
-@font-face {
-    font-family: 'Altform-Regular';
-    src: url('../fonts/Altform-Regular.woff2') format('woff2'),
-    url('../fonts/Altform-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Altform-Bold';
-    src: url('../fonts/Altform-Bold.woff2') format('woff2'),
-    url('../fonts/Altform-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* ---------------------------------------------- */
-/* GENERAL
-/* ---------------------------------------------- */
 
 
 
@@ -63,33 +28,8 @@
     color: var(--yellow);
 }
 
-.text-green {
-    color: var(--green);
-}
 
-.text-orange {
-    color: var(--orange);
-}
 
-.text-mustard {
-    color: var(--mustard);
-}
-
-.text-black {
-    color: var(--black);
-}
-
-.text-white {
-    color: var(--white);
-}
-
-.text-breaker-bay {
-    color: var(--breaker-bay);
-}
-
-.text-edgewater {
-    color: var(--edgewater);
-}
 
 /* ---------------------------------------------- */
 /* DESKTOP LAYOUT
@@ -239,382 +179,394 @@
  * LARGE BREAK POINT
 /* ---------------------------------------------- */
 
-@media only screen and (min-width : 1500px) {
-    .container-fluid {
-        max-width: 3000px;
+/* @media only screen and (min-width : 1500px) {
+    .container {
+        max-width: 1440px;
     }
-}
+} */
 
 
 /* ================= GLOBAL ================= */
 
+
+
+
 body{
-     font-family: 'Montserrat', sans-serif;
+font-family: var(--font-primary);
+background:#FFFFFF;
 }
 
-.section-padding{
-    padding: 8vh 0;
+/* HEADER */
+
+.header{
+padding:20px 0;
 }
 
-.btn-custom {
-    width: 11.5vw;
-    height: 3.7vw;
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-
-     /* চাইলে adjust করতে পারেন */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0;  /* padding remove কারণ fixed height দিচ্ছি */
-
-  
-    
-    line-height: 0.83vw;
-    letter-spacing: 0.12vw;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.9vw;
+.logo-img{
+height:60px;
 }
 
+.contact-text{
+font-size:14px;
+line-height:20px;
+font-weight:500;
+color: var(--blue);
+}
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-    background:#f8f9fa;
-    text-align:center;
-    padding:5vh 5vw;
-   
+padding:70px 0;
+text-align:center;
 }
 
-.text-blue{
-     color: #07306D;
-}
-.hero h1 {
-    font-family: 'Montserrat', sans-serif;
+.hero-title {
+    font-family: var(--font-primary);
     font-weight: 600;
-    font-size: 7.3vw;
-    line-height: 6.6vw;
-    letter-spacing: -0.21vw;
+    font-size: 105px;
+    line-height: 95px;
+    letter-spacing: -3px;
     text-align: center;
+    color: var(--blue);
+    margin-bottom: 20px;
 }
 
-
-.hero p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;   /* Regular */
-    font-size: 2.85vw;
-    line-height: 3.5vw;
-    letter-spacing: -0.07vw;
+.hero-subtitle {
+    font-family: var(--font-primary);
+    font-weight: 400; /* Regular */
+    font-size: 41px;
+    line-height: 50px;
+    letter-spacing: -1px;
     text-align: center;
-    margin-bottom: 3vh;
+    margin-bottom: 30px;
+    color: var(--blue);
 }
 
 
-/* .hero .btn{
-   
-   
-    font-size: 0.9vw;
-   
 
+/* BUTTON */
 
-} */
-
-.contact-info {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;     /* SemiBold */
-    font-size: 1.38vw;
-    line-height: 1.94vw;
-    letter-spacing: 0;
+.btn-yellow {
+    font-family: var(--font-primary);
+    background: #d4af37;
+    width: 165px;
+    height: 53px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+.btn-yellow:hover{
+     background: var(--blue);
+     color: var(--yellow);
 }
 
-/* ================= SERVICES ================= */
-
-.service-left{
-    background:#0d2c5a;
-    color:#fff;
-    padding:10vh 5vw;
+.btn-blue{
+  font-family: var(--font-primary);
+   background: var(--blue);
+    width: 165px;
+    height: 53px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--yellow);
 }
 
-.service-right{
-    background:#d4af37;
-    color:#000;
-    padding:10vh 5vw;
+/* SERVICES */
+
+.service-box{
+padding:80px;
+min-height:500px;
+}
+
+.service-blue{
+background:#0b2c5f;
+color:white;
+}
+
+.service-yellow{
+background:#d4af37;
+color:#0b2c5f;
 }
 
 .service-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    /* font-size: 4.2vw; */
-    font-size: clamp(24px, 4.2vw, 3.2vw);
-
-    line-height: 4.2vw;
-    letter-spacing: -0.14vw; /* -2px convert করলে */
+    font-family: var(--font-primary);
+    font-weight: 600; /* SemiBold */
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
 }
 
-
-.service-sub-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.38vw;
-    line-height: 1.94vw;
-    letter-spacing: 0;
-    max-width: 25vw;   /* 👈 text width control */
+.service-subtitle {
+    font-family: var(--font-primary);
+    font-weight: 600; /* SemiBold */
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
 }
-
 
 
 .service-text{
-    font-size:1.1vw;
-    margin:3vh 0;
+font-size:14px;
+line-height:22px;
+margin-bottom:20px;
 }
 
-/* ================= CONTACT ================= */
+.service-icon {
+    width: 84px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+/* CONTACT */
 
 .contact{
-    background:#f8f9fa;
-    padding:8vh 5vw;
+padding:80px 0;
 }
 
-.contact h2{
-    font-size:2.5vw;
-}
-
-.contact p{
-    font-size:1.1vw;
-}
-
-/* ================= RESPONSIVE FIX ================= */
-
-@media(max-width:991px){
-
-    .hero h1{
-        font-size:8vw;
-    }
-
-    .hero p{
-        font-size:4vw;
-    }
-
-    
-
-    .service-text{
-        font-size:3.8vw;
-    }
-
-    .btn-custom{
-        font-size:4vw;
-    }
-
-    .contact h2{
-        font-size:6vw;
-    }
-
-    .contact p{
-        font-size:4vw;
-    }
-
+.contact-title {
+    font-family: var(--font-primary);
+    font-weight: 600; /* SemiBold */
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 
-@media(max-width:991px){
+/* FOOTER */
 
-    .contact-info div{
-        font-size:3.5vw !important;
+.footer{
+background:#e0e0e0;
+padding:20px;
+text-align:center;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.logo-img{
+height:40px;
+}
+
+.hero{
+padding: 24px 0px;
+}
+
+.hero-title{
+font-size:32px;
+line-height:40px;
+}
+
+.hero-subtitle{
+font-size:16px;
+}
+
+.service-box{
+padding:40px 25px;
+min-height:auto;
+}
+
+    .service-title {
+        font-size: 44px;
+        line-height: 44px;
     }
 
-    .hero h1{
-        font-size:10vw !important;
-        line-height: 9.6vw;
-    }
+.contact{
+padding:50px 20px;
+}
 
-    .hero p{
-        font-size:5vw !important;
-        line-height: 6.5vw;
-    }
+}
 
-    /* .hero .btn {
-    font-size: 4vw;
-} */
+
+.contact-section{
+background:#f5f5f5;
+}
+.service-section{
+background: var(--blue);
+}
+
+.contact-title{
+font-size:32px;
+line-height:40px;
+color:#0b2c5f;
+font-weight:600;
+margin-bottom:12px;
+}
+
+.contact-desc{
+font-size:14px;
+line-height:22px;
+color:#0b2c5f;
+max-width:320px;
+margin-bottom:0;
+}
+
+.contact-item{
+margin-bottom:12px;
+font-size:14px;
+line-height:22px;
+color:#0b2c5f;
+}
 
 .contact-icon {
-    width: 6.2vw !important;
-    height: 3.2vw !important;
-    object-fit: contain;
-    display: block;
+    width: 18px;
 }
-
-}
-
-
-
-
-.footer-left {
-    background: #f8f9fa;
-     padding:10vh 5vw;
-}
-
-.footer-right {
-    background: #f8f9fa;
-     padding:10vh 5vw;
-     line-height: 1vw;
-}
-
-.footer-title {
-    font-size: clamp(26px, 3.5vw, 60px);
-    font-weight: 700;
-    margin-bottom: 1.5vw;
-}
-
-
-
-
-
-.footer-contact {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;     /* SemiBold */
-    font-size: 1.38vw;
-    line-height: 1.94vw;
-    letter-spacing: 0;
-     margin-bottom: 1.2vw;
-}
-
-
-/* Copyright */
-.copyright-section {
-    background: #e9ecef;
-}
-
-.copyright-text {
-    padding: 2vw 8vw;
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0;
-
-    font-size: 1.1vw;
-   
-}
-
-
 
 .contact-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.38vw;
-    line-height: 1.94vw;
-    letter-spacing: 0;
-    margin-bottom: 1.2vw;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;   /* vertical center */
-    gap: 0.6vw;
+    font-family: var(--font-primary); /* বা সরাসরি Montserrat stack */
+    font-weight: 600; /* SemiBold */
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--blue);
 }
+
+
+
+
+.footer {
+  background-color: #cfd3da; /* Figma light grey */
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.footer-text {
+    font-family: var(--font-primary);
+    font-weight: 400; /* Regular */
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: var(--blue)
+}
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+.header{
+    background:#FFFFFF;
+}
+
+/* Logo */
+.logo-img{
+    height:60px;
+}
+
+/* Contact text */
+.contact-info span{
+    font-size:14px;
+    font-weight:500;
+    color:#163567;
+}
+
+/* Icons */
+.contact-icon{
+    width:18px;
+    height:18px;
+}
+
+
 
 .contact-icon {
-    width: 1.2vw;
-    height: 1.2vw;          /* equal height দিলে perfect align হয় */
-    object-fit: contain;
-    display: block;         /* inline gap remove করে */
+    width: 18px;
 }
 
-.service-icon-img {
-    height: 4vw;      /* screen width অনুযায়ী বড়–ছোট হবে */
-    width: auto;
-}
-
-
-
-
-@media(max-width:991px){
-
-    .service-sub-title {
-   font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 4.38vw;
-    line-height: 5.94vw;
-    letter-spacing: 0;
-    max-width: none;
+.contact-text {
+    font-family: var(--font-primary);
+    font-weight: 600; /* SemiBold */
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #0b2c5f; /* চাইলে text-primary বাদ দিতে পারো */
 }
 
 
-.service-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 4.2vw;
-    line-height: 10.2vw;
-    letter-spacing: -0.14vw;
-    font-size: 10vw;
-}
-
-.service-icon-img {
-    height: 20vw;
-    width: auto;
-}
-
-.btn-custom {
-    width: 39.5vw;
-    height: 11.7vw;
-}
-
-.footer-contact {
-   
-    font-size: 3.8vw;
-    line-height: 2vw;
-   
-}
-
-.copyright-text {
-   
-    font-size: 2.1vw;
-    line-height: 2vw;
-}
-
-.footer-left {
-    background: #f8f9fa;
-    padding: 5vh 5vw;
-}
-
-.footer-right {
-    background: #f8f9fa;
-    padding: 5vh 5vw;
-   
-}
-
-}
-
-/* Hover effect */
-.btn-custom:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 0 #07306D;
-}
-
-/* Click (Active) 3D Press */
-.btn-custom:active {
-    background-color: #07306D;
-    color: #fff;
-    transform: translateY(4px);
-    box-shadow: 0 2px 0 #041f45;
+.site-logo {
+    width: 214.58px;
+    max-width: 100%;
+    height: auto;
 }
 
 
+/* Mobile adjustments */
+@media (max-width:991px){
 
-.service-section {
-    width: 100%;
-    background: linear-gradient(to left, #d4af37 50%, #0d2c5a 50%);
-}
-.logo-img {
-    height: 8vw;
-    width: auto;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .logo-img {
-        height: 12vw; /* mobile e fixed clean size */
+    .logo-img{
+        height:70px;
     }
+
+    .contact-info span{
+        font-size:15px;
+    }
+
+     .hero-title {
+        font-family: var(--font-primary);
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 41px;
+        letter-spacing: -1.53px;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+    font-family: var(--font-primary);
+    font-weight: 400; /* Regular */
+    font-size: 25px;
+    line-height: 28px;
+    letter-spacing: -0.59px;
+    text-align: center;
 }
+
+.contact-text {
+    
+    line-height: 23px;
+}
+
+
+.service-subtitle {
+   
+    font-size: 18px;
+    line-height: 26px;
+    
+}
+
+.pad-phon {
+    padding: 0 !important;
+}
+.text-padding {
+    text-align: left !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+}
+
+
+
+
+
+
