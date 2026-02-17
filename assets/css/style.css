@@ -181,21 +181,6 @@
  * LARGE BREAK POINT
 /* ---------------------------------------------- */
 
- @media only screen and (min-width : 1500px) {
-    .container {
-        max-width: 1440px;
-    }
-
-    .service-blue {
-  
-        color: #fff;
-        background-color: var(--blue);
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-left: 0;
-}
-
- }
 
 /* ================= GLOBAL ================= */
 
@@ -341,7 +326,7 @@ text-align:center;
 .service-yellow {
 
   color: #0b2c5f;
-  background-color: var(--yellow);
+  /* background-color: var(--yellow); */
 }
 
 
@@ -621,13 +606,12 @@ color:#0b2c5f;
 
 
 
-  .service-section {
-    background: linear-gradient(
-      to bottom,
-      #0b2c5f 50%,
-      #d4af37 50%
-    );
-  }
+.service-section {
+  padding: 80px 0;
+  background: #07306D; /* default blue */
+}
+
+
 
 
 .contact-text {
@@ -653,8 +637,7 @@ color:#0b2c5f;
             color: var(--blue);
        
         position: relative;
-                padding-left: 35px;
-        padding-right: 35px;
+                
               
 }
 
@@ -662,9 +645,8 @@ color:#0b2c5f;
     color: #fff;
     /* padding-left: 0;
     padding-left: 12px; */
-    background-color: var(--blue);
-     padding-left: 35px;
-        padding-right: 35px;
+    /* background-color: var(--blue); */
+     
 }
 
 .service-icon-yellow {
@@ -680,7 +662,7 @@ color:#0b2c5f;
 
 .service-section {
      padding: 0px 0px; 
- background: none;
+ 
 }
 .py-5 {
     padding-top: 6rem !important;
@@ -690,6 +672,51 @@ color:#0b2c5f;
 
 
 
+.service-section {
+  padding: 80px 0px;
+  background: linear-gradient(
+    to right,
+    #07306D 50%,
+    #E2BC2C 50%
+  );
+}
 
+@media (max-width: 991px) {
+    .service-section {
+        background: linear-gradient(to bottom, #07306D 51%, #E2BC2C 48%);
+
+    }
+}
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+
+  .service-title {
+      
+      font-size: 49px;
+      line-height: 53px;
+    
+  }
+
+
+  .contact-text {
+    
+    font-size: 17px;
+    line-height: 21px;
+    
+}
+
+.hero-title {
+   
+    font-size: 88px;
+    line-height: 79px;
+   
+}
+
+}
 
 
