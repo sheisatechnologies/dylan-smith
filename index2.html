@@ -246,33 +246,25 @@
 </footer>
 
 <script>
-const boxes = document.querySelectorAll('.service-box');
+document.addEventListener("DOMContentLoaded", function () {
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
+  const animatedElements = document.querySelectorAll('.service-box, .contact-section');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // animation once only
+      }
+    });
+  }, { 
+    threshold: 0.15,      // mobile friendly
+    rootMargin: "0px 0px -50px 0px"  // trigger slightly earlier
   });
-}, { threshold: 0.3 });
 
-boxes.forEach(box => observer.observe(box));
-</script>
+  animatedElements.forEach(el => observer.observe(el));
 
-
-
-<script>
-const contactSection = document.querySelector('.contact-section');
-
-const observer1 = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      contactSection.classList.add('active');
-    }
-  });
-}, { threshold: 0.3 });
-
-observer1.observe(contactSection);
+});
 </script>
 
 
