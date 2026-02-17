@@ -720,3 +720,208 @@ color:#0b2c5f;
 }
 
 
+
+
+
+/* /////////////gsap */
+
+.hero {
+  overflow: hidden;
+}
+
+/* Line wrapper */
+.reveal-line {
+  display: block;
+  overflow: hidden;
+}
+
+/* Text animation */
+.reveal-line {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: textReveal 1s ease forwards;
+}
+
+/* Delay for each line */
+.hero-title .reveal-line:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.hero-title .reveal-line:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.hero-subtitle .reveal-line:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.hero-subtitle .reveal-line:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+/* Button animation */
+.reveal-btn {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: btnReveal 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes textReveal {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes btnReveal {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* button animation */
+
+
+/* Hover lift */
+.btn-yellow:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 0 #d4a514,
+    0 20px 30px rgba(0,0,0,0.25);
+}
+
+/* Click press effect */
+.btn-yellow:active {
+  transform: translateY(4px);
+  box-shadow: 
+    0 3px 0 #d4a514,
+    0 8px 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+.service-icon {
+  transition: transform 0.4s ease;
+}
+
+.service-box:hover .service-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+
+
+.service-title,
+.service-subtitle,
+.service-text,
+.service-box .btn {
+  opacity: 0;
+  transform: translateY(60px) scale(0.96);
+  filter: blur(8px);
+  transition: 
+    opacity 0.8s cubic-bezier(.22,.61,.36,1),
+    transform 0.8s cubic-bezier(.22,.61,.36,1),
+    filter 0.8s cubic-bezier(.22,.61,.36,1);
+}
+
+/* Active Animation */
+
+.service-box.active .service-title {
+  transition-delay: 0.15s;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.service-box.active .service-subtitle {
+  transition-delay: 0.3s;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.service-box.active .service-text:nth-of-type(1) {
+  transition-delay: 0.45s;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.service-box.active .service-text:nth-of-type(2) {
+  transition-delay: 0.6s;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.service-box.active .btn {
+  transition-delay: 0.75s;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+
+/* ///////contact section //////// */
+
+/* ========================= */
+/* SECTION INITIAL STATE */
+/* ========================= */
+
+.contact-title,
+.contact-desc,
+.contact-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 
+    opacity 0.8s cubic-bezier(.22,.61,.36,1),
+    transform 0.8s cubic-bezier(.22,.61,.36,1);
+}
+
+/* ========================= */
+/* ACTIVE STATE */
+/* ========================= */
+
+.contact-section.active .contact-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.contact-section.active .contact-desc {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* Stagger for contact items */
+
+.contact-section.active .contact-item:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.contact-section.active .contact-item:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.75s;
+}
+
+.contact-section.active .contact-item:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+
+/* Icon subtle pop */
+.contact-item img {
+  transition: transform 0.4s ease;
+}
+
+.contact-item:hover img {
+  transform: scale(1.2);
+}
