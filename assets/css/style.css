@@ -296,7 +296,7 @@ text-align:center;
 
 
 .service-section {
-  padding: 80px 0;
+  padding: 80px 0px;
 
   background: linear-gradient(
     to right,
@@ -665,15 +665,15 @@ color:#0b2c5f;
  
 }
 .py-5 {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
 }
 }
 
 
 
 .service-section {
-  padding: 80px 0px;
+  
   background: linear-gradient(
     to right,
     #07306D 50%,
