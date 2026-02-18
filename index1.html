@@ -85,26 +85,28 @@
 
 
 <!-- HERO -->
+
 <section class="hero">
-  <div class="container pb-5">
 
-    <h1 class="hero-title">
-      <span class="reveal-line">Trusted, reliable</span>
-      <span class="reveal-line">& experienced.</span>
-    </h1>
+<div class="container pb-5">
 
-    <p class="hero-subtitle">
-      <span class="reveal-line">Property & Garden Maintenance</span>
-      <span class="reveal-line">in the South East.</span>
-    </p>
+<h1 class="hero-title">
+Trusted, reliable
+& experienced.
+</h1>
 
-    <a href="#" class="btn btn-yellow reveal-btn">
-      HIRE ME
-    </a>
+<p class="hero-subtitle">
+Property & Garden Maintenance<br>
+in the South East.
+</p>
 
-  </div>
+<a href="#" class="btn btn-yellow">
+HIRE ME
+</a>
+
+</div>
+
 </section>
-
 
 
 <!-- SERVICES -->
@@ -182,7 +184,7 @@
     <div class="row align-items-center">
 
       <!-- LEFT 4 COLUMN -->
-      <div class="col-lg-5 mb-5 contact-item">
+      <div class="col-lg-5 mb-5">
         <h3 class="contact-title">
           Contact
         </h3>
@@ -194,7 +196,7 @@
 
 
       <!-- RIGHT 4 COLUMN WITH OFFSET 4 -->
-      <div class="col-lg-4 offset-lg-3 contact-item">
+      <div class="col-lg-4 offset-lg-3">
         <div class="d-flex flex-column align-items-start gap-3">
 
           <div class="d-flex align-items-center gap-2">
@@ -245,27 +247,7 @@
   </div>
 </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-  const animatedElements = document.querySelectorAll('.service-box, .contact-section');
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target); // animation once only
-      }
-    });
-  }, { 
-    threshold: 0.15,      // mobile friendly
-    rootMargin: "0px 0px -50px 0px"  // trigger slightly earlier
-  });
-
-  animatedElements.forEach(el => observer.observe(el));
-
-});
-</script>
 
 
 </body>
