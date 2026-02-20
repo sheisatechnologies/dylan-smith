@@ -402,7 +402,7 @@ padding:80px 0;
     font-weight: 600; /* SemiBold */
     font-size: 60px;
     line-height: 61px;
-    letter-spacing: 1px;
+    letter-spacing: -2px;
     margin-bottom: 15px;
     color:var(--blue)
 }
