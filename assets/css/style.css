@@ -285,14 +285,22 @@ text-align:center;
     color: var(--yellow);
 }
 
-.btn-blue:hover{
 
-     transform: translateY(-4px);
+.btn-yellow {
+  transition: transform 0.5s ease, box-shadow 0.5s ease !important;
+}
+
+
+.btn-blue {
+  transition: transform 0.5s ease, box-shadow 0.5s ease !important;
+}
+
+.btn-blue:hover {
+  transform: translateY(-4px);
   box-shadow: 
     0 12px 0 #07306D,
     0 20px 30px rgba(0,0,0,0.25);
 }
- 
 
 
 
@@ -455,7 +463,7 @@ background: var(--white);
 
 .contact-desc {
     font-family: var(--font-primary);
-    font-weight: 600;       /* SemiBold */
+    font-weight: 400;       /* SemiBold */
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0;
@@ -634,7 +642,7 @@ color:#0b2c5f;
 
 .contact-desc {
     font-family: var(--font-primary);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0;
